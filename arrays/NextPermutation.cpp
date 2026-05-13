@@ -2,7 +2,7 @@
 using namespace std;
 
 
-    void nextPermutation(vector<int>& nums) {
+    void Optimal_nextPermutation(vector<int>& nums) {
         // Your code goes here
         
     int n=nums.size();
