@@ -6,8 +6,8 @@ class Solution {
 public:
     vector<int> insertionSort(vector<int>& nums) {
 
-for(int k=0;k<nums.size();k++){
-        for(int i=1;i<nums.size();i++){
+for(int k=0;k<nums.size()-1;k++){
+        for(int i=k+1;i>0;i--){
             if(nums[i]<nums[i-1]){
                 swap(nums[i],nums[i-1]);
             }
