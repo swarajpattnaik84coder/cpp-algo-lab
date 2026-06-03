@@ -7,7 +7,7 @@ void mergesort(int low,int high, vector<int>&arr){
 
     if(low>=high) return ;
 
-    int mid =(low+high)/2;
+    int mid =low+(high-low)/2;
     mergesort(low,mid,arr);
     mergesort(mid+1,high,arr);
     merge(low,mid,high,arr);
